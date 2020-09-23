@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flappy bird</title>
+	<script src="utils.js"></script>
+	<script src="point.js"></script>
+	<script src="size.js"></script>
+	<script src="vector.js"></script>
+	<script src="shape.js"></script>
+	<script src="circle.js"></script>
+	<script src="rect.js"></script>
+	<script src="aabb.js"></script>
+	<script src="graphics.js"></script>
+	<script src="renderer.js"></script>
+	<script src="physicsbody.js"></script>
+	<script src="physicsworld.js"></script>
+	<script src="entity.js"></script>
+	<script src="scene.js"></script>
+	<script src="flappy.js"></script>
+	<script src="pipe.js"></script>
+	<script src="doublepipe.js"></script>
+	<script src="engine.js"></script>
+	<script src="app.js"></script>
+
+	<style type="text/css">
+		* {padding: 0; margin: 0;}
+		#game {
+			position: fixed;
+			top: 0; left: 0; right: 0; bottom: 0;
+			width: 100%; height: 100%;
+			background: #0cf;
+		}
+		#score {
+			z-index: 3;
+			position: fixed; 
+			display: inline-block;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<span id="score">0</span>
+	<canvas id="game"></canvas>
+
+<script>
+	const canvas = document.getElementById("game")
+	const app = new App(canvas)
+	app.run()
+</script>
+</body>
+</html>
